@@ -163,3 +163,36 @@ console.log(
   })
 );
 console.log("cars........", cars);
+
+// Array flat - flattens to 1 level
+
+const nestedArray = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+
+console.log("nestedArray....", nestedArray);
+
+const flattenedArray = nestedArray.flat();
+
+console.log("flattenedArray2...", flattenedArray);
+
+// Deeper array - flatten to 2 level
+
+const deepArray = [
+  [
+    [1, 2, 3],
+    [4, 5, 6],
+  ],
+  [
+    [7, 8, 9],
+    [10, 11, 12],
+  ],
+];
+
+console.log("deepArray....", deepArray);
+
+const flattenedArray2 = deepArray.flat(2);
+
+console.log("flattenedArray2...", flattenedArray2);
